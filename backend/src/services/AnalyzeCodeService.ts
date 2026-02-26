@@ -9,9 +9,7 @@ export class AnalyzeCodeService {
 
     const cyclomaticComplexity =
       MetricsCalculator.calculateCyclomaticComplexity(
-        rawMetrics.functionCount,
-        rawMetrics.ifCount,
-        rawMetrics.forCount
+        rawMetrics.decisionPoints
       );
 
     const maintainability =
